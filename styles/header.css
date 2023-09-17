@@ -126,6 +126,7 @@ body{
 }
 
 .para{
+    scroll-behavior: smooth;
     scroll-snap-stop: always;
     scroll-snap-type: y mandatory;
     max-height: 100vh;
@@ -313,7 +314,7 @@ button:hover{
 @media only screen and (max-width:980px) {    
     .header{
         margin-right: 0px;
-        height: 80px;
+        height: 60px;
         border-bottom: 3px solid white;
     }
 
@@ -328,34 +329,46 @@ button:hover{
         display: none;
     }
 
+    .title-text{
+        margin: 30px;
+        margin-top: 90px;
+        text-align: center;
+        font-size: 30px;        
+    }
+    .subtitle-text{
+        font-size: 18px;
+        margin: 18px;
+        margin-bottom: 9px;
+    }
+
     .promo-div{        
         margin: 20px;        
     }
 
     .promo-image{
-    width: 15vh;
-    height: 15vh;
+        width: 15vh;
+        height: 15vh;
     }
 
     .home, .about, .services, .projects, .contact{
         width: 90%;
         margin-left: 10px;
         margin-right: 10px;
-        padding-bottom: 80px;
+        padding-bottom: 120px;
     } 
     
     input{
-    width: 80%;
-    color: white;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: rgba(0, 0, 0, 0.25);
-    font-size: 20px;
-    outline: none;
-    border: none;
-    border-bottom: 2px solid white;
-    margin: 10px; 
+        width: 80%;
+        color: white;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: rgba(0, 0, 0, 0.25);
+        font-size: 18px;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid white;
+        margin: 10px; 
     }
 
     .menu{
@@ -368,7 +381,7 @@ button:hover{
         width: 20px;
         position: fixed;
         left: 1rem;
-        top: 20px;
+        top: 10px;
         display: inline-flex;
         align-items: center;
         justify-content: center;
