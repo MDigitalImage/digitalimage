@@ -354,7 +354,7 @@ button:hover{
         width: 90%;
         margin-left: 10px;
         margin-right: 10px;
-        padding-bottom: 120px;
+        padding-bottom: 180px;
     } 
     
     input{
@@ -394,7 +394,7 @@ button:hover{
         z-index: 12;
         position: absolute;
         left: 0px;
-        top: 82px;
+        top: 62px;
         flex-direction: row;
         align-items: start;
         justify-content: space-between;
