@@ -157,6 +157,7 @@ body{
 }
 
 .back-background{
+    filter: blur(0.2rem);
     transform: translateZ(-40px) scale(14);
 }
 
@@ -321,7 +322,7 @@ button:hover{
 @media only screen and (max-width:980px) { 
     
     .back-background{
-        transform: translateZ(-40px) scale(15);
+        transform: translateZ(-40px) scale(16);
     }
     
     
