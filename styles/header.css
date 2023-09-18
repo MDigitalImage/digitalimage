@@ -151,13 +151,13 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-    opacity: 0.25;
+    opacity: 0.26;
     object-fit: cover;
     z-index: -1;
 }
 
 .back-background{
-    transform: translateZ(-40px) scale(18);
+    transform: translateZ(-40px) scale(14);
 }
 
 .front-background{
@@ -191,7 +191,7 @@ body{
 
 .subtitle-text{
     margin: 20px;
-    margin-bottom: 10px;
+    margin-top: 40px;
     font-weight: bold;
     font-size: 22px;
     text-align: center;
@@ -280,13 +280,19 @@ button:hover{
 }
 
 .promo-out{
+    overflow-y: hidden;
     max-width: 100%;
     margin: 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    
 }
+
+.promo-out::-webkit-scrollbar{
+    display: none;
+  }
 
 .promo-div{
     max-width: 100%;
@@ -298,8 +304,9 @@ button:hover{
 }
 
 .promo-image{
-    width: 40vh;
-    height: 40vh;
+    width: 25vh;
+    height: 20vh;
+    opacity: 0.8;
 }
 
 .menu{
@@ -311,7 +318,13 @@ button:hover{
 }
 
 
-@media only screen and (max-width:980px) {    
+@media only screen and (max-width:980px) { 
+    
+    .back-background{
+        transform: translateZ(-40px) scale(15);
+    }
+    
+    
     .header{
         margin-right: 0px;
         height: 60px;
@@ -338,7 +351,26 @@ button:hover{
     .subtitle-text{
         font-size: 18px;
         margin: 18px;
-        margin-bottom: 9px;
+        margin-top: 32px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .main-text{
+        font-size: 16px;
+        margin: 16px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .tick-icon{
+        margin-right: 6px;
+        margin-left: 0px;        
+    }
+
+    .promo-out{
+        max-width: 100%;
+        margin-top: 40px;        
     }
 
     .promo-div{        
@@ -347,11 +379,11 @@ button:hover{
 
     .promo-image{
         width: 15vh;
-        height: 15vh;
+        height: 10vh;
     }
 
     .home, .about, .services, .projects, .contact{
-        width: 90%;
+        width: 80%;
         margin-left: 10px;
         margin-right: 10px;
         padding-bottom: 180px;
@@ -398,18 +430,17 @@ button:hover{
         flex-direction: row;
         align-items: start;
         justify-content: space-between;
-        background-color: rgba(0, 0, 0, 0.95);
+        background-color: rgba(0, 0, 0, 0.8);
+        height: 60px;
         width: 100%;
-
+        vertical-align: middle;
     }
 
     .header-text2{
         display: inline;
         font-size: 16px;
-        margin: 10px;
-        color: white;
-        margin-top: 16px;
-        margin-bottom: 16px;
+        margin: auto;
+        color: white;        
     }
 
 }
