@@ -125,6 +125,19 @@ body{
     vertical-align: middle;
 }
 
+.hidden2{
+    opacity: 0.2;
+    filter: blur(0.1rem);
+    transform: translateX(+8%);
+}
+
+.show2{
+    opacity: 1;
+    filter: blur(0rem);
+    transform: translateX(0);
+    transition: all 1.5s;
+}
+
 .para{
     scroll-behavior: smooth;
     scroll-snap-stop: always;
@@ -254,6 +267,7 @@ button:hover{
     transition: all 1s;
 }
 
+
 .arrowtop{
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.9);
@@ -288,12 +302,23 @@ button:hover{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    
+    margin-bottom: 40px;    
 }
 
-.promo-out::-webkit-scrollbar{
+.promo-out2{
+    overflow-y: hidden;
+    max-width: 100%;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 140px;    
+}
+
+.promo-out::-webkit-scrollbar, .promo-out2::-webkit-scrollbar{
     display: none;
-  }
+}
 
 .promo-div{
     max-width: 100%;
@@ -318,8 +343,31 @@ button:hover{
     display: none;
 }
 
+.next-div{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrowdown{
+    height: 12px;
+    width: 12px;
+}
+
+
 
 @media only screen and (max-width:980px) { 
+
+    .next-div{
+        margin-top: 20px;        
+    }
+    
+    .arrowdown{
+        height: 12px;
+        width: 12px;
+    }
     
     .back-background{
         transform: translateZ(-40px) scale(16);
@@ -370,8 +418,15 @@ button:hover{
     }
 
     .promo-out{
+        margin-bottom: 240px;
         max-width: 100%;
         margin-top: 40px;        
+    }
+
+    .promo-out2{
+        margin-bottom: 400px;
+        max-width: 100%;
+        margin-top: 40px;
     }
 
     .promo-div{        
