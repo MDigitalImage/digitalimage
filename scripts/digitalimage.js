@@ -67,10 +67,26 @@ para.addEventListener('scroll',function(){
 
 const menuIcon = document.getElementById('menu'); 
 const floationMenu = document.getElementById('floating-menu');
+var menuActivated = false;
+
+document.querySelector(".para").addEventListener('click',function(){
+    if(menuActivated){
+        para.style.filter = "blur(0rem)"
+        floationMenu.style.display = "none"
+        menuActivated = false;        
+    }
+})
 
 menuIcon.addEventListener('click', function(){
-    para.style.filter = "blur(0.4rem)"
-    floationMenu.style.display = "flex"
+    if(!menuActivated){
+        para.style.filter = "blur(0.4rem)"
+        floationMenu.style.display = "flex"
+        menuActivated = true;
+    }else{
+        para.style.filter = "blur(0rem)"
+        floationMenu.style.display = "none"
+        menuActivated = false; 
+    }    
 })
 
 document.querySelectorAll('.header-text2').forEach((headerItem) => {
@@ -78,6 +94,7 @@ document.querySelectorAll('.header-text2').forEach((headerItem) => {
     headerItem.addEventListener('click', function() {
         para.style.filter = "blur(0rem)"
         floationMenu.style.display = "none"
+        menuActivated = false; 
         if(headerItemText == 'Home' ){
             elementHome.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
         }else if(headerItemText == 'Services'){
