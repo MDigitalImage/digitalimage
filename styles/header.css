@@ -157,8 +157,8 @@ body{
 }
 
 .back-background{
-    filter: blur(0.2rem);
-    transform: translateZ(-40px) scale(14);
+    filter: blur(0.1rem);
+    transform: translateZ(-40px) scale(16);
 }
 
 .front-background{
