@@ -43,18 +43,18 @@ elementLogo2.addEventListener('click', function(){
     window.open("digitalimage.html", "_self");
 })
 
-document.querySelectorAll('.header-text').forEach((headerItem) => {
+document.querySelectorAll('.header-text2').forEach((headerItem) => {
     const headerItemText = headerItem.textContent.trim();
     headerItem.addEventListener('click', function() {
-        if(headerItemText == 'Home' ){
+        if(headerItemText == 'HOME' ){
             elementHome.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-        }else if(headerItemText == 'Services'){
+        }else if(headerItemText == 'SERVICES'){
             elementServices.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-        }else if(headerItemText == 'Projects'){
+        }else if(headerItemText == 'PROJECTS'){
             elementProjects.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-        }else if(headerItemText == 'About'){
+        }else if(headerItemText == 'ABOUT'){
             elementAbout.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-        }else if(headerItemText == 'Contact'){
+        }else if(headerItemText == 'CONTACT'){
             elementContact.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
         }
     })    
