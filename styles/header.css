@@ -240,6 +240,7 @@ input{
 }
 
 button{
+    border: none;
     margin: 40px;
     font-size: 18px;
     width: 200px; 
