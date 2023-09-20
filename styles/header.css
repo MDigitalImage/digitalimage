@@ -201,6 +201,7 @@ body{
     font-size: 40px;
     font-weight: bolder;
     color: white;
+    letter-spacing: 2px;
 }
 
 .subtitle-text{
@@ -210,6 +211,7 @@ body{
     font-size: 22px;
     text-align: center;
     color: white;
+    letter-spacing: 1px;
 }
 
 .main-text{
@@ -332,7 +334,7 @@ button:hover{
 .promo-image{
     width: 25vh;
     height: 20vh;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .menu{
