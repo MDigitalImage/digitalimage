@@ -44,7 +44,24 @@ elementLogo2.addEventListener('click', function(){
 })
 
 document.querySelectorAll('.header-text2').forEach((headerItem) => {
-    const headerItemText = headerItem.textContent.trim();
+    const headerItemText = headerItem.textContent.trim().toUpperCase();
+    headerItem.addEventListener('click', function() {
+        if(headerItemText == 'HOME' ){
+            elementHome.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        }else if(headerItemText == 'SERVICES'){
+            elementServices.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        }else if(headerItemText == 'PROJECTS'){
+            elementProjects.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        }else if(headerItemText == 'ABOUT'){
+            elementAbout.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        }else if(headerItemText == 'CONTACT'){
+            elementContact.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        }
+    })    
+})
+
+document.querySelectorAll('.header-text').forEach((headerItem) => {
+    const headerItemText = headerItem.textContent.trim().toUpperCase();
     headerItem.addEventListener('click', function() {
         if(headerItemText == 'HOME' ){
             elementHome.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });

@@ -164,7 +164,7 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-    opacity: 0.26;
+    opacity: 0.14;
     object-fit: cover;
     z-index: -1;
 }
@@ -176,8 +176,6 @@ body{
 
 .front-background{
     display: none;
-    transform: translateZ(0px) scale(2);
-    opacity: 0.1;
 }
 
 .home, .about, .services, .projects, .contact{
@@ -332,8 +330,8 @@ button:hover{
 }
 
 .promo-image{
-    width: 25vh;
-    height: 20vh;
+    width: 20vh;
+    height: 15vh;
     opacity: 0.9;
 }
 
@@ -358,9 +356,13 @@ button:hover{
     width: 12px;
 }
 
+.bottom-header-text{
+    color: white;
+}
 
 
-@media only screen and (max-width:980px) { 
+
+@media only screen and (max-width:1050px) { 
 
     .next-div{
         margin-top: 20px;        
@@ -382,16 +384,21 @@ button:hover{
         border-bottom: 3px solid white;
     }
 
+    .bottom-header{
+        border-top: 3px solid white;
+        height: 60px;
+    }
+
 
     .logo{
-        margin-left: 6px;
+        margin: auto;
         height: 40px;
         width: 40px;
     }
 
-    .header-text{
+    .header-text, .bottom-header-text{
         display: none;
-    }
+    }     
 
     .title-text{
         margin: 30px;
@@ -420,12 +427,15 @@ button:hover{
     }
 
     .promo-out{
+        justify-content: start;
+        margin: auto;
         margin-bottom: 200px;
         max-width: 100%;
         margin-top: 40px;        
     }
 
     .promo-out2{
+        justify-content: start;
         margin-bottom: 320px;
         max-width: 100%;
         margin-top: 40px;
@@ -436,8 +446,8 @@ button:hover{
     }
 
     .promo-image{
-        width: 15vh;
-        height: 10vh;
+        width: 14vh;
+        height: 7vh;
     }
 
     .home, .about, .services, .projects, .contact{
