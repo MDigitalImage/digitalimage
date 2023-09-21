@@ -43,26 +43,6 @@ elementLogo2.addEventListener('click', function(){
     window.open("digitalimage.html", "_self");
 })
 
-document.querySelectorAll('.header-text2').forEach((headerItem) => {
-    para.style.filter = "blur(0rem)"
-    floationMenu.style.display = "none"
-    menuActivated = false;  
-    const headerItemText = headerItem.textContent.trim().toUpperCase();
-    headerItem.addEventListener('click', function() {
-        if(headerItemText == 'HOME' ){
-            elementHome.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-        }else if(headerItemText == 'SERVICES'){
-            elementServices.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-        }else if(headerItemText == 'PROJECTS'){
-            elementProjects.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-        }else if(headerItemText == 'ABOUT'){
-            elementAbout.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-        }else if(headerItemText == 'CONTACT'){
-            elementContact.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-        }
-    })    
-})
-
 document.querySelectorAll('.header-text').forEach((headerItem) => {
     const headerItemText = headerItem.textContent.trim().toUpperCase();
     headerItem.addEventListener('click', function() {
@@ -121,6 +101,27 @@ menuIcon.addEventListener('click', function(){
         floationMenu.style.display = "none"
         menuActivated = false; 
     }    
+})
+
+document.querySelectorAll('.header-text2').forEach((headerItem) => {
+    const headerItemText = headerItem.textContent.trim().toUpperCase();
+    headerItem.addEventListener('click', function() {
+        para.style.filter = "blur(0rem)"
+        floationMenu.style.display = "none"
+        menuActivated = false; 
+
+        if(headerItemText == 'HOME' ){
+            elementHome.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        }else if(headerItemText == 'SERVICES'){
+            elementServices.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        }else if(headerItemText == 'PROJECTS'){
+            elementProjects.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        }else if(headerItemText == 'ABOUT'){
+            elementAbout.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        }else if(headerItemText == 'CONTACT'){
+            elementContact.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        }
+    })    
 })
 
 
