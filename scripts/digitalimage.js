@@ -44,6 +44,9 @@ elementLogo2.addEventListener('click', function(){
 })
 
 document.querySelectorAll('.header-text2').forEach((headerItem) => {
+    para.style.filter = "blur(0rem)"
+    floationMenu.style.display = "none"
+    menuActivated = false;  
     const headerItemText = headerItem.textContent.trim().toUpperCase();
     headerItem.addEventListener('click', function() {
         if(headerItemText == 'HOME' ){
