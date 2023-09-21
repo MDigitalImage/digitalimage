@@ -13,6 +13,7 @@ a{
 body{
     margin: 0;
     background-color: black;
+    overflow: hidden;
 }
 
 .header-text{
@@ -149,6 +150,7 @@ body{
 }
 
 .inside-para{
+    overflow: hidden;
     position: relative;
     display: flex;
     flex-direction: column;
