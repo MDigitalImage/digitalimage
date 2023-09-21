@@ -120,24 +120,6 @@ menuIcon.addEventListener('click', function(){
     }    
 })
 
-document.querySelectorAll('.header-text2').forEach((headerItem) => {
-    const headerItemText = headerItem.textContent.trim();
-    headerItem.addEventListener('click', function() {
-        para.style.filter = "blur(0rem)"
-        floationMenu.style.display = "none"
-        menuActivated = false; 
-        if(headerItemText == 'Home' ){
-            elementHome.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-        }else if(headerItemText == 'Services'){
-            elementServices.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-        }else if(headerItemText == 'Projects'){
-            elementProjects.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-        }else if(headerItemText == 'About'){
-            elementAbout.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-        }else if(headerItemText == 'Contact'){
-            elementContact.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
-        }
-    })    
-})
+
 
 
