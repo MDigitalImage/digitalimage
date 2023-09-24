@@ -56,6 +56,8 @@ document.querySelectorAll('.header-text').forEach((headerItem) => {
             elementAbout.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
         }else if(headerItemText == 'CONTACT'){
             elementContact.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        }else{
+            window.open("digitalimage.html", "_self");
         }
     })    
 })
@@ -120,6 +122,8 @@ document.querySelectorAll('.header-text2').forEach((headerItem) => {
             elementAbout.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
         }else if(headerItemText == 'CONTACT'){
             elementContact.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        }else{
+            window.open("digitalimage.html", "_self");
         }
     })    
 })
