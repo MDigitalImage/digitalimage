@@ -413,7 +413,7 @@ button:hover{
     }
     .subtitle-text{
         font-size: 18px;
-        margin: 18px;
+        margin: 9px;
         margin-top: 32px;
         margin-left: 0px;
         margin-right: 0px;
@@ -422,6 +422,7 @@ button:hover{
     .main-text{
         font-size: 16px;
         margin: 16px;
+        margin-top: 8px;
         margin-left: 0px;
         margin-right: 0px;
     }
