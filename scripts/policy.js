@@ -16,11 +16,11 @@ const elementLogo2 = document.getElementById("logo2");
 const elementArrowtop = document.getElementById("arrowtop")
 
 elementLogo.addEventListener('click', function(){
-    window.open("digitalimage.html", "_self");
+    window.open("index.html", "_self");
 })
 
 elementLogo2.addEventListener('click', function(){
-    window.open("digitalimage.html", "_self");
+    window.open("index.html", "_self");
 })
 
 const para = document.getElementById('para');

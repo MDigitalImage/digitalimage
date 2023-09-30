@@ -36,11 +36,11 @@ const elementLogo2 = document.getElementById("logo2");
 const elementArrowtop = document.getElementById("arrowtop")
 
 elementLogo.addEventListener('click', function(){
-    window.open("digitalimage.html", "_self");
+    window.open("index.html", "_self");
 })
 
 elementLogo2.addEventListener('click', function(){
-    window.open("digitalimage.html", "_self");
+    window.open("index.html", "_self");
 })
 
 document.querySelectorAll('.header-text').forEach((headerItem) => {
@@ -58,7 +58,7 @@ document.querySelectorAll('.header-text').forEach((headerItem) => {
         }else if(headerItemText == 'CONTACT'){
             elementContact.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
         }else{
-            window.open("digitalimage.html", "_self");
+            window.open("index.html", "_self");
         }
     })    
 })
@@ -124,7 +124,7 @@ document.querySelectorAll('.header-text2').forEach((headerItem) => {
         }else if(headerItemText == 'CONTACT'){
             elementContact.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
         }else{
-            window.open("digitalimage.html", "_self");
+            window.open("index.html", "_self");
         }
     })    
 })
@@ -144,7 +144,7 @@ document.querySelectorAll('.next-div').forEach((textItem) => {
         }else if(nextDivItemText == 'CONTACT'){
             elementContact.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
         }else{
-            window.open("digitalimage.html", "_self");
+            window.open("index.html", "_self");
         }
     })    
 })
