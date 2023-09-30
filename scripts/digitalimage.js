@@ -129,6 +129,26 @@ document.querySelectorAll('.header-text2').forEach((headerItem) => {
     })    
 })
 
+document.querySelectorAll('.next-div').forEach((textItem) => {
+    const nextDivItemText = textItem.textContent.trim().toUpperCase();
+    textItem.addEventListener('click', function() {
+        
+        if(nextDivItemText == 'HOME' ){
+            elementHome.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        }else if(nextDivItemText == 'SERVICES'){
+            elementServices.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        }else if(nextDivItemText == 'PROJECTS'){
+            elementProjects.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        }else if(nextDivItemText == 'ABOUT'){
+            elementAbout.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        }else if(nextDivItemText == 'CONTACT'){
+            elementContact.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        }else{
+            window.open("digitalimage.html", "_self");
+        }
+    })    
+})
+
 
 
 

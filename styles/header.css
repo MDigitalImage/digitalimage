@@ -101,6 +101,10 @@ body{
     cursor: pointer;
 }
 
+.tick-icon:hover{
+    opacity: 0.75;
+}
+
 .bottom{
     margin-bottom: 45px;
     display: flex;
@@ -306,7 +310,7 @@ button:hover{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 40px;    
 }
 
@@ -317,7 +321,7 @@ button:hover{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 140px;    
 }
 
@@ -327,7 +331,10 @@ button:hover{
 
 .promo-div{
     max-width: 100%;
-    margin: 40px;
+    width: 300px;
+    margin: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -335,8 +342,8 @@ button:hover{
 }
 
 .promo-image{
-    width: 20vh;
-    height: 15vh;
+    width: 14vh;
+    height: 10vh;
     opacity: 0.9;
 }
 
@@ -349,11 +356,18 @@ button:hover{
 }
 
 .next-div{
+    width: 100px;
+    margin: auto;
     margin-top: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+.next-div:hover{
+    opacity: 0.75;
 }
 
 .arrowdown{
