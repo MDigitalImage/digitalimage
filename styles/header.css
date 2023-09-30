@@ -462,12 +462,12 @@ button:hover{
     }
 
     .promo-div{        
-        margin: 20px;        
+        margin: 32px;        
     }
 
     .promo-image{
-        width: 14vh;
-        height: 12vh;
+        width: 10vh;
+        height: 8vh;
     }
 
     .home, .about, .services, .projects, .contact{
